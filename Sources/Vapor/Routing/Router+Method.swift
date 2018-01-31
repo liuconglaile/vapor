@@ -33,8 +33,6 @@ extension Future: ResponseEncodable {
             return try encodable.encode(for: req)
         }
     }
-
-
 }
 
 extension Router {
@@ -93,4 +91,3 @@ extension Router {
         return self.on(.patch, to: path, use: closure)
     }
 }
-
